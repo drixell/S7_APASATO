@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="S7_APASATO.login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="INGRESE SUS DATOS" FontSize="20" 
+                   TextColor="Black" HorizontalTextAlignment="Center"/>
+
+            <Entry x:Name="lblusuario" Placeholder="Introduce tu Usuario" />
+            <Entry x:Name="lblpassword" Placeholder="Intrduce tu Contraseña" IsPassword="True"/>
+
+            <Button x:Name="btningreso" Text="INICIAR SESIÓN"
+                     TextColor="White" Clicked="btningreso_Clicked"/>
+            <Button x:Name="btnregistro" Text="REGISTRAR" Clicked="btnregistro_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

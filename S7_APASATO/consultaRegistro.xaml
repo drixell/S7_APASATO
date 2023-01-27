@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="S7_APASATO.consultaRegistro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="BIENVENIDO A LA CONSULTA" FontSize="20"
+                   TextColor="Blue" HorizontalTextAlignment="Center"/>
+            <ListView x:Name="ListaUsuarios" ItemSelected="OnSelection">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding nombre}" Detail="{Binding usuario}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
